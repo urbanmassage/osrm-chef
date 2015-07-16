@@ -1,3 +1,4 @@
+include_recipe 'build-essential::default'
 include_recipe 'osrm::install_git'
 
 Chef::Log.info("About to run osrm_map for GB")

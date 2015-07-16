@@ -1,5 +1,5 @@
 execute 'apt-get -y update'
-execute 'apt-get -y install git libboost-dev gcc g++ make cmake libstxxl-dev libxml2-dev libbz2-dev zlib1g-dev libzip-dev libboost-filesystem-dev libboost-thread-dev libboost-system-dev libboost-regex-dev libboost-program-options-dev libboost-iostreams-dev libgomp1 libpng-dev libprotoc7 libprotobuf-dev protobuf-compiler liblua5.1-0-dev libluabind-dev pkg-config libosmpbf-dev libtbb-dev libboost-test-dev'
+execute 'apt-get -y install build-essential git cmake pkg-config libprotoc-dev libprotobuf8 protobuf-compiler libprotobuf-dev libosmpbf-dev libpng12-dev libbz2-dev libstxxl-dev libstxxl-doc libstxxl1 libxml2-dev libzip-dev libboost-all-dev lua5.1 liblua5.1-0-dev libluabind-dev libluajit-5.1-dev libtbb-dev'
 
 include_recipe 'osrm::install_git'
 

@@ -3,15 +3,15 @@ execute 'apt-get -y install build-essential git cmake pkg-config libprotoc-dev l
 
 include_recipe 'osrm::install_git'
 
-Chef::Log.info("About to run osrm_map for GB")
+Chef::Log.info("About to run osrm_map for ireland-and-northern-ireland")
 
-osrm_map 'great-britain' do
+osrm_map 'ireland-and-northern-ireland' do
   action :create_if_missing
 end
 
-Chef::Log.info("About to run osrm_routed for GB")
+Chef::Log.info("About to run osrm_routed for ireland-and-northern-ireland")
 
-osrm_routed 'great-britain' do
+osrm_routed 'ireland-and-northern-ireland' do
   user   'osrm-routed'
   listen '0.0.0.0'
   port   5000

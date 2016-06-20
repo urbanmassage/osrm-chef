@@ -23,6 +23,11 @@ default['osrm']['map_data']['planet']['profiles'] = %w{car}
 default['osrm']['map_data']['planet']['url'] = 'http://planet.openstreetmap.org/pbf/planet-latest.osm.pbf'
 default['osrm']['map_data']['planet']['checksum'] = "#{node['osrm']['map_data']['planet']['url']}.md5"
 
+# ile-de-france (paris)
+default['osrm']['map_data']['ile-de-france']['profiles'] = %w{car}
+default['osrm']['map_data']['ile-de-france']['url'] = 'http://download.geofabrik.de/europe/france/ile-de-france-latest.osm.pbf'
+default['osrm']['map_data']['ile-de-france']['checksum'] = "#{node['osrm']['map_data']['ile-de-france']['url']}.md5"
+
 # continents
 %w{africa antarctica asia australia-oceania central-america europe north-america south-america}.each do |region|
   default['osrm']['map_data'][region]['profiles'] = %w{car}
